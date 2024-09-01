@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --font: "Quicksand", sans-serif;
+  --fon1-2: "Raleway", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 4rem;
+  background-color: #faf2ed;
+}
+.Container {
+  display: flex;
+  height: 11rem;
+}
+.TextContainer {
+  overflow: hidden;
+  padding: 5rem 2.5rem 3rem 2.9rem;
+  z-index: 3;
+  color: white;
+  position: absolute;
+  height: 11rem;
+}
+.imageBox {
+  overflow: hidden;
+  z-index: 2;
+  width: fit-content;
+  position: absolute;
+}
+img {
+  transition: all 2s ease;
+}
+#title {
+  font-family: var(--font);
+  font-size: 2rem;
+  transition: all 0.4s ease-out;
+}
+#para {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: var(--font);
+  transition: all 0.5s ease-out;
+}
+.boxPart1,
+.boxPart2 {
+  width: 11.2rem;
+  height: 37rem;
+}
+.LoginForm {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  border-radius: 25px;
+  height: 37rem;
+  width: 22.4rem;
+  z-index: -1;
+  transition: all 2s ease-out;
+}
+.inputBoxD {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 37rem;
+  width: 22.4rem;
+  z-index: 2;
+}
+input::placeholder {
+  font-family: var(--fon1-2);
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+}
+
+#inputBox {
+  width: 18rem;
+  padding-left: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #e3e6e8;
+  outline: none;
+  opacity: 0;
+  transition: all 0.35s ease-out;
+}
+#inputBox2 {
+  margin-top: 2rem;
+  padding-left: 3rem;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #e3e6e8;
+  outline: none;
+}
+
+#logoP {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-12rem, -2.4rem);
+  transition: all 1s ease-out;
+}
+#logoP > i {
+  font-size: 1.2rem;
+  color: #848484;
+}
+#logoKey {
+  position: absolute;
+  transform: translate(-12rem, 2.6rem);
+  transition: all 1s ease-out;
+}
+#logoKey > i {
+  font-size: 1.2rem;
+  color: #848484;
+}
+#TitleS {
+  font-family: var(--fon1-2);
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-top: 5rem;
+  transform: translateY(-7rem);
+  transition: all 1.5s ease-out;
+}
+#line {
+  position: absolute;
+  font-family: var(--fon1-2);
+  font-size: 1.3rem;
+  font-weight: 500;
+  transform: translateY(30rem);
+}
+#line2 {
+  cursor: pointer;
+  position: absolute;
+  font-family: var(--fon1-2);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff5f6d;
+  transform: translateY(32rem);
+}
+button {
+  cursor: pointer;
+  font-family: var(--fon1-2);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  width: 18rem;
+  height: 3rem;
+  position: absolute;
+  transform: translateY(25rem);
+  background-color: #ff5f6d;
+  border: none;
+  z-index: 2;
+  transition: all 0.35s ease;
+}
+.boxPart1 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: white;
+  transition: opacity 0.3s ease;
+}
+.signText {
+  text-align: left;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+.signText > h1 {
+  font-family: var(--fon1-2);
+  text-transform: uppercase;
+  line-height: 1.7rem;
+}
+#text-1 {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #ff5f6d;
+}
+#text-2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #ff5f6d;
+}
+.boxPart2 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: white;
+  transition: opacity 0.3s ease;
+}
+.takeText > h1 {
+  font-family: var(--fon1-2);
+  text-transform: uppercase;
+  line-height: 1.7rem;
+}
+.takeText {
+  text-align: left;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+#Ttext-1 {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: black;
+}
+#Ttext-2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.boxPart2:hover {
+  z-index: 1;
+  box-shadow: -10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.boxPart1:hover {
+  z-index: 1;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #c94752;
+  scale: 1.0025;
+}
+#line2:hover {
+  color: #c94752;
+}
